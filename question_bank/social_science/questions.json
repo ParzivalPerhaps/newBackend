@@ -1,0 +1,235 @@
+{
+    "questions": [
+        {
+            "question": "Which best describes why Charles Babbage design thed Difference Engine?",
+            "answerChoiceA": "To automate the creation of logarithmic tables",
+            "answerChoiceB": "To improve naval navigation",
+            "answerChoiceC": "For general-purpose computing",
+            "answerChoiceD": "For academic research in mathematics",
+            "answerChoiceE": "To enhance mechanical engineering processes",
+            "correctAnswer": 0,
+            "pageNumberStart": 6,
+            "pageNumberEnd": 7
+        },
+        {
+            "question": "What significant contribution to data processing was made by Herman Hollerith?",
+            "answerChoiceA": "Developing the first programmable computer",
+            "answerChoiceB": "Inventing the electromechanical punch card tabulator",
+            "answerChoiceC": "Creating the first data storage algorithm",
+            "answerChoiceD": "Introducing magnetic tape for data storage",
+            "answerChoiceE": "Designing the first commercial typewriter",
+            "correctAnswer": 1,
+            "pageNumberStart": 11,
+            "pageNumberEnd": 11
+        },
+        {
+            "question": "What was a major factor in the early adoption of typewriters and mechanical calculators in the US?",
+            "answerChoiceA": "Superior US technological innovation",
+            "answerChoiceB": "The absence of strong labor unions",
+            "answerChoiceC": "Lack of skilled labor in the US",
+            "answerChoiceD": "Absence of established traditions in American businesses",
+            "answerChoiceE": "Government incentives for office automation",
+            "correctAnswer": 3,
+            "pageNumberStart": 12,
+            "pageNumberEnd": 12
+        },
+        {
+            "question": "What was the primary purpose of Herman Hollerith's tabulating machine in the 1890 U.S. Census?",
+            "answerChoiceA": "To calculate population growth rate",
+            "answerChoiceB": "For data storage",
+            "answerChoiceC": "To automate demographic data processing",
+            "answerChoiceD": "To predict future census trends",
+            "answerChoiceE": "For electronic data transmission",
+            "correctAnswer": 2,
+            "pageNumberStart": 11,
+            "pageNumberEnd": 11
+        },
+        {
+            "question": "What was a significant consequence of Ada Lovelace's work on Charles Babbage's Analytical Engine?",
+            "answerChoiceA": "Development of the first modern computer",
+            "answerChoiceB": "Creation of the first computer programming language",
+            "answerChoiceC": "Introduction of binary code",
+            "answerChoiceD": "Design of the first graphical user interface",
+            "answerChoiceE": "Invention of the first algorithm for a computing machine",
+            "correctAnswer": 4,
+            "pageNumberStart": 8,
+            "pageNumberEnd": 8
+        },
+        {
+            "question": "What was the original meaning of the word 'computer' before World War II?",
+            "answerChoiceA": "An electronic device for data processing",
+            "answerChoiceB": "A person who performed mathematical calculations",
+            "answerChoiceC": "A machine for automating office tasks",
+            "answerChoiceD": "A tool for mechanical engineering",
+            "answerChoiceE": "A device for storing information",
+            "correctAnswer": 1,
+            "pageNumberStart": 5,
+            "pageNumberEnd": 5
+        },
+        {
+            "question": "What was the primary use of the ENIAC computer?",
+            "answerChoiceA": "General office work",
+            "answerChoiceB": "Creating the first graphical user interface",
+            "answerChoiceC": "Playing video games",
+            "answerChoiceD": "Calculating artillery firing tables for the U.S. Army",
+            "answerChoiceE": "Weather forecasting",
+            "correctAnswer": 3,
+            "pageNumberStart": 18,
+            "pageNumberEnd": 18
+        },
+        {
+            "question": "Which programming language did Grace Hopper contribute to?",
+            "answerChoiceA": "Java",
+            "answerChoiceB": "COBOL",
+            "answerChoiceC": "Python",
+            "answerChoiceD": "C++",
+            "answerChoiceE": "LISP",
+            "correctAnswer": 1,
+            "pageNumberStart": 32,
+            "pageNumberEnd": 32
+        },
+        {
+            "question": "What was a significant impact of IBM's System/360?",
+            "answerChoiceA": "It was the first personal computer",
+            "answerChoiceB": "Introduction of the microprocessor",
+            "answerChoiceC": "It standardized the architecture of mainframe computers",
+            "answerChoiceD": "Development of the first software operating system",
+            "answerChoiceE": "Creating the first computer network",
+            "correctAnswer": 2,
+            "pageNumberStart": 34,
+            "pageNumberEnd": 34
+        },
+        {
+            "question": "What role did Vannevar Bush's Memex concept play in the development of computers?",
+            "answerChoiceA": "It was the first digital computer",
+            "answerChoiceB": "Inspired the creation of the World Wide Web",
+            "answerChoiceC": "Led to the invention of the microprocessor",
+            "answerChoiceD": "Introduced the concept of virtual reality",
+            "answerChoiceE": "Provided a blueprint for graphical user interfaces",
+            "correctAnswer": 1,
+            "pageNumberStart": 27,
+            "pageNumberEnd": 27
+        },
+        {
+            "question": "What was the main purpose of the Turing Test, proposed by Alan Turing?",
+            "answerChoiceA": "To determine a computer's ability to think like a human",
+            "answerChoiceB": "To measure a computer's processing speed",
+            "answerChoiceC": "To test software reliability",
+            "answerChoiceD": "To evaluate the effectiveness of artificial intelligence",
+            "answerChoiceE": "To assess the accuracy of data processing",
+            "correctAnswer": 0,
+            "pageNumberStart": 23,
+            "pageNumberEnd": 23
+        },
+        {
+            "question": "Which development marked the beginning of the third generation of computers?",
+            "answerChoiceA": "The use of transistors",
+            "answerChoiceB": "Introduction of personal computers",
+            "answerChoiceC": "The development of the Internet",
+            "answerChoiceD": "The use of integrated circuits",
+            "answerChoiceE": "Creation of the first operating system",
+            "correctAnswer": 3,
+            "pageNumberStart": 35,
+            "pageNumberEnd": 35
+        },
+        {
+            "question": "What was the key advancement made by the Apple Macintosh in 1984?",
+            "answerChoiceA": "Introduction of the first microprocessor",
+            "answerChoiceB": "Creation of the first mobile operating system",
+            "answerChoiceC": "Development of the first graphical user interface",
+            "answerChoiceD": "Invention of the touchscreen technology",
+            "answerChoiceE": "Implementation of the first wireless networking",
+            "correctAnswer": 2,
+            "pageNumberStart": 46,
+            "pageNumberEnd": 46
+        },
+        {
+            "question": "Which of the following best describes the impact of the ARPANET?",
+            "answerChoiceA": "It was the first computer used in space",
+            "answerChoiceB": "Pioneered the development of modern smartphones",
+            "answerChoiceC": "Led to the creation of the first computer virus",
+            "answerChoiceD": "Served as a precursor to the modern Internet",
+            "answerChoiceE": "Introduced the concept of cloud computing",
+            "correctAnswer": 3,
+            "pageNumberStart": 39,
+            "pageNumberEnd": 39
+        },
+        {
+            "question": "What was the main contribution of Douglas Engelbart's oN-Line System (NLS)?",
+            "answerChoiceA": "It was the first system to use hypertext",
+            "answerChoiceB": "Introduced the first wireless mouse",
+            "answerChoiceC": "Created the first word processing software",
+            "answerChoiceD": "Developed the first multiplayer online game",
+            "answerChoiceE": "Invented the first graphical web browser",
+            "correctAnswer": 0,
+            "pageNumberStart": 28,
+            "pageNumberEnd": 28
+        },
+        {
+            "question": "In which area did the UNIVAC computer make a significant impact?",
+            "answerChoiceA": "Mobile computing",
+            "answerChoiceB": "Educational software",
+            "answerChoiceC": "Election result predictions",
+            "answerChoiceD": "Quantum computing",
+            "answerChoiceE": "Virtual reality technology",
+            "correctAnswer": 2,
+            "pageNumberStart": 19,
+            "pageNumberEnd": 19
+        },
+        {
+            "question": "Which technology was crucial for the development of early portable computers?",
+            "answerChoiceA": "Touchscreen displays",
+            "answerChoiceB": "Microprocessors",
+            "answerChoiceC": "Optical storage media",
+            "answerChoiceD": "Wireless networking",
+            "answerChoiceE": "Solar power cells",
+            "correctAnswer": 1,
+            "pageNumberStart": 47,
+            "pageNumberEnd": 47
+        },
+        {
+            "question": "What was the significance of Tim Berners-Lee's invention in 1989?",
+            "answerChoiceA": "Developing the first computer virus",
+            "answerChoiceB": "Creating the first online social network",
+            "answerChoiceC": "Inventing the World Wide Web",
+            "answerChoiceD": "Establishing the first online marketplace",
+            "answerChoiceE": "Introducing the first AI chatbot",
+            "correctAnswer": 2,
+            "pageNumberStart": 40,
+            "pageNumberEnd": 40
+        },
+        {
+            "question": "What was the primary function of the Colossus computer during World War II?",
+            "answerChoiceA": "Data storage",
+            "answerChoiceB": "Weather prediction",
+            "answerChoiceC": "Deciphering encrypted messages",
+            "answerChoiceD": "Aircraft design simulations",
+            "answerChoiceE": "Automating industrial processes",
+            "correctAnswer": 2,
+            "pageNumberStart": 16,
+            "pageNumberEnd": 16
+        },
+        {
+            "question": "Which of the following best describes the contribution of Ada Lovelace to computing?",
+            "answerChoiceA": "Designing the first computer chip",
+            "answerChoiceB": "Inventing the binary number system",
+            "answerChoiceC": "Developing the concept of an algorithm",
+            "answerChoiceD": "Creating the first high-level programming language",
+            "answerChoiceE": "Pioneering the field of computer graphics",
+            "correctAnswer": 2,
+            "pageNumberStart": 8,
+            "pageNumberEnd": 8
+        },
+        {
+            "question": "What was the primary achievement of the Apollo Guidance Computer (AGC)?",
+            "answerChoiceA": "Managing the first email system",
+            "answerChoiceB": "Facilitating the first moon landing",
+            "answerChoiceC": "Launching the first internet browser",
+            "answerChoiceD": "Creating the first digital camera",
+            "answerChoiceE": "Inventing the first touchscreen technology",
+            "correctAnswer": 1,
+            "pageNumberStart": 25,
+            "pageNumberEnd": 25
+        }
+    ]
+}
