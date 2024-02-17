@@ -12,7 +12,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.logout = exports.setUserStat = exports.getUserStats = exports.login = exports.signUp = exports.getAuthenticatedUser = void 0;
+exports.logout = exports.getTopThreeUsers = exports.setUserStat = exports.getUserStats = exports.login = exports.signUp = exports.getAuthenticatedUser = void 0;
 const http_errors_1 = __importDefault(require("http-errors"));
 const user_1 = __importDefault(require("../models/user"));
 const bcrypt_1 = __importDefault(require("bcrypt"));
@@ -53,7 +53,7 @@ const signUp = (req, res, next) => __awaiter(void 0, void 0, void 0, function* (
             email: email,
             password: passwordHashed
         });
-        req.session.userId = newUser._id;
+        req.session.userId = newUser._id.toString(); // ! switch to .toString() for build
         res.status(201).json(newUser);
     }
     catch (error) {
@@ -76,7 +76,7 @@ const login = (req, res, next) => __awaiter(void 0, void 0, void 0, function* ()
         if (!passwordMatch) {
             throw (0, http_errors_1.default)(401, "Invalid credentials");
         }
-        req.session.userId = user._id;
+        req.session.userId = user._id.toString(); // ! switch to .toString() for build
         res.status(201).json(user);
     }
     catch (error) {
@@ -90,10 +90,11 @@ const getUserStats = (req, res, next) => __awaiter(void 0, void 0, void 0, funct
         if (!username) {
             throw (0, http_errors_1.default)(400, "Missing parameters");
         }
-        const user = yield user_1.default.findOne({ username: username }).select("+socialScienceQuestionsAnswered +socialScienceQuestionsCorrect +scienceQuestionsAnswered +scienceQuestionsCorrect +econQuestionsAnswered +econQuestionsCorrect +litQuestionsAnswered +litQuestionsCorrect +artQuestionsAnswered +artQuestionsCorrect +musicQuestionsAnswered +musicQuestionsCorrect +mathQuestionsAnswered +mathQuestionsCorrect +questionNumSetting +liveCorrectionsSetting +pageNumbersSetting").exec();
+        const user = yield user_1.default.findOne({ username: username }).select("+socialScienceQuestionsAnswered +socialScienceQuestionsCorrect +scienceQuestionsAnswered +scienceQuestionsCorrect +econQuestionsAnswered +econQuestionsCorrect +litQuestionsAnswered +litQuestionsCorrect +artQuestionsAnswered +artQuestionsCorrect +musicQuestionsAnswered +musicQuestionsCorrect +mathQuestionsAnswered +mathQuestionsCorrect +totalQuestionsAnswered +totalQuestionsCorrect").exec();
         if (!user) {
             throw (0, http_errors_1.default)(401, "Invalid username");
         }
+        console.log(user);
         res.status(200).json(user);
     }
     catch (error) {
@@ -102,7 +103,7 @@ const getUserStats = (req, res, next) => __awaiter(void 0, void 0, void 0, funct
 });
 exports.getUserStats = getUserStats;
 const setUserStat = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
-    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p;
+    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x, _y, _z, _0, _1, _2, _3, _4, _5, _6, _7, _8, _9, _10;
     console.log("Got set stat request");
     const stat = req.body.stat;
     const newValue = req.body.newValue;
@@ -124,126 +125,147 @@ const setUserStat = (req, res, next) => __awaiter(void 0, void 0, void 0, functi
                         // correct
                         console.log("Correct");
                         yield (user === null || user === void 0 ? void 0 : user.updateOne({ socialScienceQuestionsAnswered: answeredValue + 1 }));
+                        yield (user === null || user === void 0 ? void 0 : user.updateOne({ totalQuestionsAnswered: ((_c = user === null || user === void 0 ? void 0 : user.totalQuestionsAnswered) !== null && _c !== void 0 ? _c : 0) + 1 }));
+                        yield (user === null || user === void 0 ? void 0 : user.updateOne({ totalQuestionsCorrect: ((_d = user === null || user === void 0 ? void 0 : user.totalQuestionsCorrect) !== null && _d !== void 0 ? _d : 0) + 1 }));
                         yield (user === null || user === void 0 ? void 0 : user.updateOne({ socialScienceQuestionsCorrect: correctValue + 1 }));
                         break;
                     case 0:
                         // incorrect
                         console.log("Incorrect");
                         yield (user === null || user === void 0 ? void 0 : user.updateOne({ socialScienceQuestionsAnswered: answeredValue + 1 }));
+                        yield (user === null || user === void 0 ? void 0 : user.updateOne({ totalQuestionsAnswered: ((_e = user === null || user === void 0 ? void 0 : user.totalQuestionsAnswered) !== null && _e !== void 0 ? _e : 0) + 1 }));
                         break;
                     default:
                         break;
                 }
                 break;
             case "science":
-                answeredValue = (_c = user === null || user === void 0 ? void 0 : user.scienceQuestionsAnswered) !== null && _c !== void 0 ? _c : 0;
-                correctValue = (_d = user === null || user === void 0 ? void 0 : user.scienceQuestionsCorrect) !== null && _d !== void 0 ? _d : 0;
+                answeredValue = (_f = user === null || user === void 0 ? void 0 : user.scienceQuestionsAnswered) !== null && _f !== void 0 ? _f : 0;
+                correctValue = (_g = user === null || user === void 0 ? void 0 : user.scienceQuestionsCorrect) !== null && _g !== void 0 ? _g : 0;
                 switch (newValue) {
                     case 1:
                         // correct
                         console.log("Correct");
                         yield (user === null || user === void 0 ? void 0 : user.updateOne({ scienceQuestionsAnswered: answeredValue + 1 }));
                         yield (user === null || user === void 0 ? void 0 : user.updateOne({ scienceQuestionsCorrect: correctValue + 1 }));
+                        yield (user === null || user === void 0 ? void 0 : user.updateOne({ totalQuestionsCorrect: ((_h = user === null || user === void 0 ? void 0 : user.totalQuestionsCorrect) !== null && _h !== void 0 ? _h : 0) + 1 }));
+                        yield (user === null || user === void 0 ? void 0 : user.updateOne({ totalQuestionsAnswered: ((_j = user === null || user === void 0 ? void 0 : user.totalQuestionsAnswered) !== null && _j !== void 0 ? _j : 0) + 1 }));
                         break;
                     case 0:
                         // incorrect
                         console.log("Incorrect");
                         yield (user === null || user === void 0 ? void 0 : user.updateOne({ scienceQuestionsAnswered: answeredValue + 1 }));
+                        yield (user === null || user === void 0 ? void 0 : user.updateOne({ totalQuestionsAnswered: ((_k = user === null || user === void 0 ? void 0 : user.totalQuestionsAnswered) !== null && _k !== void 0 ? _k : 0) + 1 }));
                         break;
                     default:
                         break;
                 }
                 break;
             case "econ":
-                answeredValue = (_e = user === null || user === void 0 ? void 0 : user.econQuestionsAnswered) !== null && _e !== void 0 ? _e : 0;
-                correctValue = (_f = user === null || user === void 0 ? void 0 : user.econQuestionsCorrect) !== null && _f !== void 0 ? _f : 0;
+                answeredValue = (_l = user === null || user === void 0 ? void 0 : user.econQuestionsAnswered) !== null && _l !== void 0 ? _l : 0;
+                correctValue = (_m = user === null || user === void 0 ? void 0 : user.econQuestionsCorrect) !== null && _m !== void 0 ? _m : 0;
                 switch (newValue) {
                     case 1:
                         // correct
                         console.log("Correct");
                         yield (user === null || user === void 0 ? void 0 : user.updateOne({ econQuestionsAnswered: answeredValue + 1 }));
                         yield (user === null || user === void 0 ? void 0 : user.updateOne({ econQuestionsCorrect: correctValue + 1 }));
+                        yield (user === null || user === void 0 ? void 0 : user.updateOne({ totalQuestionsCorrect: ((_o = user === null || user === void 0 ? void 0 : user.totalQuestionsCorrect) !== null && _o !== void 0 ? _o : 0) + 1 }));
+                        yield (user === null || user === void 0 ? void 0 : user.updateOne({ totalQuestionsAnswered: ((_p = user === null || user === void 0 ? void 0 : user.totalQuestionsAnswered) !== null && _p !== void 0 ? _p : 0) + 1 }));
                         break;
                     case 0:
                         // incorrect
                         console.log("Incorrect");
                         yield (user === null || user === void 0 ? void 0 : user.updateOne({ econQuestionsAnswered: answeredValue + 1 }));
+                        yield (user === null || user === void 0 ? void 0 : user.updateOne({ totalQuestionsAnswered: ((_q = user === null || user === void 0 ? void 0 : user.totalQuestionsAnswered) !== null && _q !== void 0 ? _q : 0) + 1 }));
                         break;
                     default:
                         break;
                 }
                 break;
             case "lit":
-                answeredValue = (_g = user === null || user === void 0 ? void 0 : user.litQuestionsAnswered) !== null && _g !== void 0 ? _g : 0;
-                correctValue = (_h = user === null || user === void 0 ? void 0 : user.litQuestionsCorrect) !== null && _h !== void 0 ? _h : 0;
+                answeredValue = (_r = user === null || user === void 0 ? void 0 : user.litQuestionsAnswered) !== null && _r !== void 0 ? _r : 0;
+                correctValue = (_s = user === null || user === void 0 ? void 0 : user.litQuestionsCorrect) !== null && _s !== void 0 ? _s : 0;
                 switch (newValue) {
                     case 1:
                         // correct
                         console.log("Correct");
                         yield (user === null || user === void 0 ? void 0 : user.updateOne({ litQuestionsAnswered: answeredValue + 1 }));
                         yield (user === null || user === void 0 ? void 0 : user.updateOne({ litQuestionsCorrect: correctValue + 1 }));
+                        yield (user === null || user === void 0 ? void 0 : user.updateOne({ totalQuestionsCorrect: ((_t = user === null || user === void 0 ? void 0 : user.totalQuestionsCorrect) !== null && _t !== void 0 ? _t : 0) + 1 }));
+                        yield (user === null || user === void 0 ? void 0 : user.updateOne({ totalQuestionsAnswered: ((_u = user === null || user === void 0 ? void 0 : user.totalQuestionsAnswered) !== null && _u !== void 0 ? _u : 0) + 1 }));
                         break;
                     case 0:
                         // incorrect
                         console.log("Incorrect");
                         yield (user === null || user === void 0 ? void 0 : user.updateOne({ litQuestionsAnswered: answeredValue + 1 }));
+                        yield (user === null || user === void 0 ? void 0 : user.updateOne({ totalQuestionsAnswered: ((_v = user === null || user === void 0 ? void 0 : user.totalQuestionsAnswered) !== null && _v !== void 0 ? _v : 0) + 1 }));
                         break;
                     default:
                         break;
                 }
                 break;
             case "art":
-                answeredValue = (_j = user === null || user === void 0 ? void 0 : user.artQuestionsAnswered) !== null && _j !== void 0 ? _j : 0;
-                correctValue = (_k = user === null || user === void 0 ? void 0 : user.artQuestionsCorrect) !== null && _k !== void 0 ? _k : 0;
+                answeredValue = (_w = user === null || user === void 0 ? void 0 : user.artQuestionsAnswered) !== null && _w !== void 0 ? _w : 0;
+                correctValue = (_x = user === null || user === void 0 ? void 0 : user.artQuestionsCorrect) !== null && _x !== void 0 ? _x : 0;
                 switch (newValue) {
                     case 1:
                         // correct
                         console.log("Correct");
                         yield (user === null || user === void 0 ? void 0 : user.updateOne({ artQuestionsAnswered: answeredValue + 1 }));
                         yield (user === null || user === void 0 ? void 0 : user.updateOne({ artQuestionsCorrect: correctValue + 1 }));
+                        yield (user === null || user === void 0 ? void 0 : user.updateOne({ totalQuestionsCorrect: ((_y = user === null || user === void 0 ? void 0 : user.totalQuestionsCorrect) !== null && _y !== void 0 ? _y : 0) + 1 }));
+                        yield (user === null || user === void 0 ? void 0 : user.updateOne({ totalQuestionsAnswered: ((_z = user === null || user === void 0 ? void 0 : user.totalQuestionsAnswered) !== null && _z !== void 0 ? _z : 0) + 1 }));
                         break;
                     case 0:
                         // incorrect
                         console.log("Incorrect");
                         yield (user === null || user === void 0 ? void 0 : user.updateOne({ artQuestionsAnswered: answeredValue + 1 }));
+                        yield (user === null || user === void 0 ? void 0 : user.updateOne({ totalQuestionsAnswered: ((_0 = user === null || user === void 0 ? void 0 : user.totalQuestionsAnswered) !== null && _0 !== void 0 ? _0 : 0) + 1 }));
                         break;
                     default:
                         break;
                 }
                 break;
             case "music":
-                answeredValue = (_l = user === null || user === void 0 ? void 0 : user.musicQuestionsAnswered) !== null && _l !== void 0 ? _l : 0;
-                correctValue = (_m = user === null || user === void 0 ? void 0 : user.musicQuestionsCorrect) !== null && _m !== void 0 ? _m : 0;
+                answeredValue = (_1 = user === null || user === void 0 ? void 0 : user.musicQuestionsAnswered) !== null && _1 !== void 0 ? _1 : 0;
+                correctValue = (_2 = user === null || user === void 0 ? void 0 : user.musicQuestionsCorrect) !== null && _2 !== void 0 ? _2 : 0;
                 switch (newValue) {
                     case 1:
                         // correct
                         console.log("Correct");
                         yield (user === null || user === void 0 ? void 0 : user.updateOne({ musicQuestionsAnswered: answeredValue + 1 }));
                         yield (user === null || user === void 0 ? void 0 : user.updateOne({ musicQuestionsCorrect: correctValue + 1 }));
+                        yield (user === null || user === void 0 ? void 0 : user.updateOne({ totalQuestionsCorrect: ((_3 = user === null || user === void 0 ? void 0 : user.totalQuestionsCorrect) !== null && _3 !== void 0 ? _3 : 0) + 1 }));
+                        yield (user === null || user === void 0 ? void 0 : user.updateOne({ totalQuestionsAnswered: ((_4 = user === null || user === void 0 ? void 0 : user.totalQuestionsAnswered) !== null && _4 !== void 0 ? _4 : 0) + 1 }));
                         break;
                     case 0:
                         // incorrect
                         console.log("Incorrect");
                         yield (user === null || user === void 0 ? void 0 : user.updateOne({ musicQuestionsAnswered: answeredValue + 1 }));
+                        yield (user === null || user === void 0 ? void 0 : user.updateOne({ totalQuestionsAnswered: ((_5 = user === null || user === void 0 ? void 0 : user.totalQuestionsAnswered) !== null && _5 !== void 0 ? _5 : 0) + 1 }));
                         break;
                     default:
                         break;
                 }
                 break;
             case "math":
-                answeredValue = (_o = user === null || user === void 0 ? void 0 : user.mathQuestionsAnswered) !== null && _o !== void 0 ? _o : 0;
-                correctValue = (_p = user === null || user === void 0 ? void 0 : user.mathQuestionsCorrect) !== null && _p !== void 0 ? _p : 0;
+                answeredValue = (_6 = user === null || user === void 0 ? void 0 : user.mathQuestionsAnswered) !== null && _6 !== void 0 ? _6 : 0;
+                correctValue = (_7 = user === null || user === void 0 ? void 0 : user.mathQuestionsCorrect) !== null && _7 !== void 0 ? _7 : 0;
                 switch (newValue) {
                     case 1:
                         // correct
                         console.log("Correct");
                         yield (user === null || user === void 0 ? void 0 : user.updateOne({ mathQuestionsAnswered: answeredValue + 1 }));
                         yield (user === null || user === void 0 ? void 0 : user.updateOne({ mathQuestionsCorrect: correctValue + 1 }));
+                        yield (user === null || user === void 0 ? void 0 : user.updateOne({ totalQuestionsCorrect: ((_8 = user === null || user === void 0 ? void 0 : user.totalQuestionsCorrect) !== null && _8 !== void 0 ? _8 : 0) + 1 }));
+                        yield (user === null || user === void 0 ? void 0 : user.updateOne({ totalQuestionsAnswered: ((_9 = user === null || user === void 0 ? void 0 : user.totalQuestionsAnswered) !== null && _9 !== void 0 ? _9 : 0) + 1 }));
                         break;
                     case 0:
                         // incorrect
                         console.log("Incorrect");
                         yield (user === null || user === void 0 ? void 0 : user.updateOne({ mathQuestionsAnswered: answeredValue + 1 }));
+                        yield (user === null || user === void 0 ? void 0 : user.updateOne({ totalQuestionsAnswered: ((_10 = user === null || user === void 0 ? void 0 : user.totalQuestionsAnswered) !== null && _10 !== void 0 ? _10 : 0) + 1 }));
                         break;
                     default:
                         break;
@@ -267,6 +289,17 @@ const setUserStat = (req, res, next) => __awaiter(void 0, void 0, void 0, functi
     }
 });
 exports.setUserStat = setUserStat;
+const getTopThreeUsers = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        const users = yield user_1.default.find().sort({ totalQuestionsCorrect: -1 }).limit(3).exec();
+        console.log(users);
+        res.status(200).json(users);
+    }
+    catch (error) {
+        next(error);
+    }
+});
+exports.getTopThreeUsers = getTopThreeUsers;
 const logout = (req, res, next) => {
     req.session.destroy(error => {
         if (error) {

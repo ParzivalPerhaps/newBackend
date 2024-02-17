@@ -12,15 +12,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.createQuestion = exports.getRandomScienceQuestion = exports.getRandomEconQuestion = exports.getRandomMusicQuestion = exports.getRandomLitQuestion = exports.getRandomArtQuestion = exports.getRandomSoSciQuestion = exports.getQuestion = exports.getQuestions = void 0;
+exports.createQuestion = exports.getRandomScienceQuestion = exports.getRandomSoSciQuestion = exports.getQuestion = exports.getQuestions = void 0;
 require("dotenv/config");
 const question_1 = __importDefault(require("../models/question"));
 const questions_json_1 = __importDefault(require("../../question_bank/social_science/questions.json"));
-const questions_json_2 = __importDefault(require("../../question_bank/art/questions.json"));
-const questions_json_3 = __importDefault(require("../../question_bank/lit/questions.json"));
-const questions_json_4 = __importDefault(require("../../question_bank/music/questions.json"));
-const questions_json_5 = __importDefault(require("../../question_bank/science/questions.json"));
-const questions_json_6 = __importDefault(require("../../question_bank/economics/questions.json"));
 const getQuestions = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const questions = questions_json_1.default.questions[0];
@@ -32,6 +27,7 @@ const getQuestions = (req, res, next) => __awaiter(void 0, void 0, void 0, funct
 });
 exports.getQuestions = getQuestions;
 const getQuestion = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
+    const id = req.params.questionId;
     try {
         const questions = questions_json_1.default.questions[0];
         res.status(200).json(questions);
@@ -53,54 +49,11 @@ const getRandomSoSciQuestion = (req, res, next) => __awaiter(void 0, void 0, voi
     }
 });
 exports.getRandomSoSciQuestion = getRandomSoSciQuestion;
-const getRandomArtQuestion = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
-    try {
-        const index = getRandomInt(0, questions_json_2.default.questions.length);
-        const questions = questions_json_2.default.questions[index];
-        res.status(200).json(questions);
-    }
-    catch (error) {
-        next(error);
-    }
-});
-exports.getRandomArtQuestion = getRandomArtQuestion;
-const getRandomLitQuestion = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
-    try {
-        const index = getRandomInt(0, questions_json_3.default.questions.length);
-        const questions = questions_json_3.default.questions[index];
-        res.status(200).json(questions);
-    }
-    catch (error) {
-        next(error);
-    }
-});
-exports.getRandomLitQuestion = getRandomLitQuestion;
-const getRandomMusicQuestion = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
-    try {
-        const index = getRandomInt(0, questions_json_4.default.questions.length);
-        const questions = questions_json_4.default.questions[index];
-        res.status(200).json(questions);
-    }
-    catch (error) {
-        next(error);
-    }
-});
-exports.getRandomMusicQuestion = getRandomMusicQuestion;
-const getRandomEconQuestion = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
-    try {
-        const index = getRandomInt(0, questions_json_6.default.questions.length);
-        const questions = questions_json_6.default.questions[index];
-        res.status(200).json(questions);
-    }
-    catch (error) {
-        next(error);
-    }
-});
-exports.getRandomEconQuestion = getRandomEconQuestion;
 const getRandomScienceQuestion = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const index = getRandomInt(0, questions_json_5.default.questions.length);
-        const questions = questions_json_5.default.questions[index];
+        console.log(questions_json_1.default.questions.length);
+        const index = getRandomInt(0, questions_json_1.default.questions.length);
+        const questions = questions_json_1.default.questions[index];
         res.status(200).json(questions);
     }
     catch (error) {

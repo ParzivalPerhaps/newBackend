@@ -19,8 +19,7 @@ const userSchema = new mongoose_1.Schema({
     musicQuestionsCorrect: { type: Number, required: false, select: false },
     mathQuestionsAnswered: { type: Number, required: false, select: false },
     mathQuestionsCorrect: { type: Number, required: false, select: false },
-    questionNumSetting: { type: Number, required: false, select: false },
-    liveCorrectionsSetting: { type: Boolean, required: false, select: false },
-    pageNumbersSetting: { type: Boolean, required: false, select: false },
+    totalQuestionsAnswered: { type: Number, required: false, select: false },
+    totalQuestionsCorrect: { type: Number, required: false, select: false },
 });
 exports.default = (0, mongoose_1.model)("User", userSchema);

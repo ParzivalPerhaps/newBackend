@@ -1,0 +1,202 @@
+{
+    "questions": [
+        {
+            "question": "What is a unique feature of 'The Chemical Wedding of Christian Rosenkreutz' according to John Crowley's argument?",
+            "answerChoiceA": "It was written in the 20th century.",
+            "answerChoiceB": "It combines elements of fantasy and scientific pursuit.",
+            "answerChoiceC": "It is considered the first post-apocalyptic novel.",
+            "answerChoiceD": "It is mainly a parable.",
+            "answerChoiceE": "It is primarily an allegory.",
+            "correctAnswer": 1,
+            "pageNumberStart": 11,
+            "pageNumberEnd": 11
+        },
+        {
+            "question": "In 'The Lathe of Heaven', what is the primary theme explored by Ursula K. Le Guin?",
+            "answerChoiceA": "The influence of technology on society",
+            "answerChoiceB": "The balance between nature and industrialization",
+            "answerChoiceC": "The ethical implications of dream control",
+            "answerChoiceD": "The impact of political systems on individual freedoms",
+            "answerChoiceE": "The exploration of alternate realities through dreams",
+            "correctAnswer": 4,
+            "pageNumberStart": 21,
+            "pageNumberEnd": 21
+        },
+        {
+            "question": "In the analysis of 'Rappaccini's Daughter', what aspect of the story is highlighted as a form of technology?",
+            "answerChoiceA": "Character development",
+            "answerChoiceB": "Use of metaphors",
+            "answerChoiceC": "Botany and biology",
+            "answerChoiceD": "Historical setting",
+            "answerChoiceE": "Narrative structure",
+            "correctAnswer": 2,
+            "pageNumberStart": 72,
+            "pageNumberEnd": 72
+        },
+        {
+            "question": "According to the guide, which novel is considered by John Crowley to be the first science-fiction novel?",
+            "answerChoiceA": "Frankenstein by Mary Shelley",
+            "answerChoiceB": "The Chemical Wedding of Christian Rosenkreutz",
+            "answerChoiceC": "Symzonia: A Voyage of Discovery by John Cleeve Symmes",
+            "answerChoiceD": "Neuromancer by William Gibson",
+            "answerChoiceE": "The Last Man by Mary Shelley",
+            "correctAnswer": 1,
+            "pageNumberStart": 11,
+            "pageNumberEnd": 11
+        },
+        {
+            "question": "According to the guide, what is one of the main characteristics of pulp magazines?",
+            "answerChoiceA": "Focus on literary excellence",
+            "answerChoiceB": "Printed on high-quality paper",
+            "answerChoiceC": "Known for their sensational and escapist fiction",
+            "answerChoiceD": "Primarily featured non-fiction articles",
+            "answerChoiceE": "Targeted an academic audience",
+            "correctAnswer": 2,
+            "pageNumberStart": 35,
+            "pageNumberEnd": 35
+        },
+        {
+            "question": "Who is recognized as the first science fiction writer according to the New Yorker article referenced in the guide?",
+            "answerChoiceA": "H.G. Wells",
+            "answerChoiceB": "John Cleve Symmes",
+            "answerChoiceC": "Mary Shelley",
+            "answerChoiceD": "Edgar Allan Poe",
+            "answerChoiceE": "Herman Melville",
+            "correctAnswer": 1,
+            "pageNumberStart": 24,
+            "pageNumberEnd": 24
+        },
+        {
+            "question": "In Ursula K. Le Guin's 'The Lathe of Heaven', what is the ethnicity of Heather Lelache's father?",
+            "answerChoiceA": "African-American",
+            "answerChoiceB": "Asian-American",
+            "answerChoiceC": "Hispanic",
+            "answerChoiceD": "Native American",
+            "answerChoiceE": "Caucasian",
+            "correctAnswer": 0,
+            "pageNumberStart": 72,
+            "pageNumberEnd": 72
+        },
+        {
+            "question": "What trend in science fiction is mentioned by Eileen Gunn in the Smithsonian article referenced in the guide?",
+            "answerChoiceA": "Historical science fiction",
+            "answerChoiceB": "Cyberpunk",
+            "answerChoiceC": "Space opera",
+            "answerChoiceD": "Steampunk",
+            "answerChoiceE": "Solarpunk",
+            "correctAnswer": 4,
+            "pageNumberStart": 37,
+            "pageNumberEnd": 37
+        },
+        {
+            "question": "What is the theme of the John Crowley story 'Snow' as mentioned in the Lightspeed magazine?",
+            "answerChoiceA": "Time travel",
+            "answerChoiceB": "Artificial intelligence",
+            "answerChoiceC": "Virtual reality",
+            "answerChoiceD": "Post-apocalyptic world",
+            "answerChoiceE": "Space exploration",
+            "correctAnswer": 2,
+            "pageNumberStart": 113,
+            "pageNumberEnd": 113
+        },
+        {
+            "question": "In Ursula K. Le Guin's 'The Lathe of Heaven', what is the significance of the title?",
+            "answerChoiceA": "It refers to a dream machine.",
+            "answerChoiceB": "It is a metaphor for societal change.",
+            "answerChoiceC": "It signifies the struggle between good and evil.",
+            "answerChoiceD": "It represents the futility of attempting to control destiny.",
+            "answerChoiceE": "It is a reference to a Taoist philosophy.",
+            "correctAnswer": 4,
+            "pageNumberStart": 71,
+            "pageNumberEnd": 71
+        },
+        {
+            "question": "What is a prominent theme in Neil Gaiman's works as discussed in the guide?",
+            "answerChoiceA": "The conflict between technology and nature.",
+            "answerChoiceB": "Exploration of mythical and fairy tale elements.",
+            "answerChoiceC": "Focus on futuristic science fiction.",
+            "answerChoiceD": "Depiction of historical events.",
+            "answerChoiceE": "Investigation of political ideologies.",
+            "correctAnswer": 1,
+            "pageNumberStart": 163,
+            "pageNumberEnd": 163
+        },
+        {
+            "question": "In the guide's discussion on 'Metropolis' by Fritz Lang, what aspect of the film is highlighted?",
+            "answerChoiceA": "Its pioneering special effects.",
+            "answerChoiceB": "The depiction of a utopian society.",
+            "answerChoiceC": "Its focus on romance.",
+            "answerChoiceD": "The exploration of class struggle.",
+            "answerChoiceE": "The use of color in film.",
+            "correctAnswer": 3,
+            "pageNumberStart": 162,
+            "pageNumberEnd": 162
+        },
+        {
+            "question": "According to the guide, what distinguishes Octavia E. Butler's approach to science fiction?",
+            "answerChoiceA": "Her stories are primarily set in outer space.",
+            "answerChoiceB": "She focuses on advanced technology.",
+            "answerChoiceC": "Her work includes strong elements of fantasy.",
+            "answerChoiceD": "She incorporates themes of identity and belonging.",
+            "answerChoiceE": "Her narratives are centered on historical events.",
+            "correctAnswer": 3,
+            "pageNumberStart": 163,
+            "pageNumberEnd": 163
+        },
+        {
+            "question": "What significant contribution to the science fiction genre is attributed to Ambrose Bierce in the guide?",
+            "answerChoiceA": "Pioneering the use of alternate dimensions.",
+            "answerChoiceB": "Introducing the concept of time travel.",
+            "answerChoiceC": "Creating the first alien invasion narrative.",
+            "answerChoiceD": "Developing the idea of post-apocalyptic worlds.",
+            "answerChoiceE": "Establishing the foundation for cyberpunk.",
+            "correctAnswer": 1,
+            "pageNumberStart": 163,
+            "pageNumberEnd": 163
+        },
+        {
+            "question": "In Ursula K. Le Guin's 'The Lathe of Heaven,' what is the role of George Orr?",
+            "answerChoiceA": "A scientist experimenting with dreams",
+            "answerChoiceB": "A detective investigating a mysterious phenomenon",
+            "answerChoiceC": "A government agent in a dystopian future",
+            "answerChoiceD": "An artist creating virtual realities",
+            "answerChoiceE": "A man whose dreams alter reality",
+            "correctAnswer": 4,
+            "pageNumberStart": 163,
+            "pageNumberEnd": 163
+        },
+        {
+            "question": "What is the main theme of the film 'Metropolis' directed by Fritz Lang?",
+            "answerChoiceA": "The rise of artificial intelligence",
+            "answerChoiceB": "Space exploration and its consequences",
+            "answerChoiceC": "Class struggle in a futuristic society",
+            "answerChoiceD": "A time-traveling adventure",
+            "answerChoiceE": "Alien invasion of Earth",
+            "correctAnswer": 2,
+            "pageNumberStart": 163,
+            "pageNumberEnd": 163
+        },
+        {
+            "question": "In the guide, how is Neil Gaiman's work typically characterized?",
+            "answerChoiceA": "Hard science fiction with a focus on technological advancements",
+            "answerChoiceB": "Narratives exploring deep space and alien species",
+            "answerChoiceC": "Stories blending mythological elements with modern settings",
+            "answerChoiceD": "Dystopian themes focusing on societal collapse",
+            "answerChoiceE": "Comedic works satirizing contemporary issues",
+            "correctAnswer": 2,
+            "pageNumberStart": 164,
+            "pageNumberEnd": 164
+        },
+        {
+            "question": "What does the guide mention as a significant feature of pulp magazines?",
+            "answerChoiceA": "Their educational content",
+            "answerChoiceB": "Use of low-quality paper stock",
+            "answerChoiceC": "Focus on highbrow literature",
+            "answerChoiceD": "Promotion of classical music",
+            "answerChoiceE": "Exclusively non-fiction articles",
+            "correctAnswer": 1,
+            "pageNumberStart": 166,
+            "pageNumberEnd": 166
+        }
+    ]
+}

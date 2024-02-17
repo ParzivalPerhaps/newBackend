@@ -1,0 +1,257 @@
+{
+    "questions": [
+        {
+            "question": "Which term describes the ability to prevent buyers from enjoying the benefits of consuming a good or service without paying for it?",
+            "answerChoiceA": "Excludability",
+            "answerChoiceB": "Rivalry",
+            "answerChoiceC": "Scarcity",
+            "answerChoiceD": "Consumer surplus",
+            "answerChoiceE": "Market power",
+            "correctAnswer": 0,
+            "pageNumberStart": 128,
+            "pageNumberEnd": 128
+        },
+        {
+            "question": "According to the Economics Resource Guide, what is the primary reason for the underinvestment in R&D by private companies?",
+            "answerChoiceA": "Lack of skilled labor",
+            "answerChoiceB": "Rivals can copy ideas",
+            "answerChoiceC": "High tax rates",
+            "answerChoiceD": "Insufficient government subsidies",
+            "answerChoiceE": "Low market demand",
+            "correctAnswer": 1,
+            "pageNumberStart": 125,
+            "pageNumberEnd": 125
+        },
+        {
+            "question": "What is the 'Tragedy of the Commons' as described in the Economics Resource Guide?",
+            "answerChoiceA": "The failure of markets due to monopolies",
+            "answerChoiceB": "The decline of public goods due to overuse",
+            "answerChoiceC": "The depletion of a common resource due to overuse",
+            "answerChoiceD": "The collapse of financial markets",
+            "answerChoiceE": "The increase in public expenditure",
+            "correctAnswer": 2,
+            "pageNumberStart": 138,
+            "pageNumberEnd": 138
+        },
+        {
+            "question": "Which of the following is an example of a 'normative economic' statement?",
+            "answerChoiceA": "The unemployment rate rose by 2% last year",
+            "answerChoiceB": "Increasing the minimum wage will reduce poverty",
+            "answerChoiceC": "The GDP growth rate is 3.5%",
+            "answerChoiceD": "The stock market fluctuated due to policy changes",
+            "answerChoiceE": "Consumer spending accounts for 70% of the economy",
+            "correctAnswer": 1,
+            "pageNumberStart": 137,
+            "pageNumberEnd": 137
+        },
+        {
+            "question": "What does 'Marginal cost' refer to in the context of the Economics Resource Guide?",
+            "answerChoiceA": "The cost of producing one additional unit of a good",
+            "answerChoiceB": "The average cost of all units produced",
+            "answerChoiceC": "The total cost of production",
+            "answerChoiceD": "The fixed cost of production",
+            "answerChoiceE": "The variable cost of production",
+            "correctAnswer": 0,
+            "pageNumberStart": 138,
+            "pageNumberEnd": 138
+        },
+        {
+            "question": "What is the primary function of the Federal Reserve?",
+            "answerChoiceA": "Regulating the stock market",
+            "answerChoiceB": "Managing the country's foreign exchange reserves",
+            "answerChoiceC": "Implementing monetary policy",
+            "answerChoiceD": "Directly setting interest rates for consumer loans",
+            "answerChoiceE": "Issuing new government bonds",
+            "correctAnswer": 2,
+            "pageNumberStart": 90,
+            "pageNumberEnd": 90
+        },
+        {
+            "question": "Which of the following is an example of a contractionary fiscal policy?",
+            "answerChoiceA": "Decreasing government spending",
+            "answerChoiceB": "Increasing government subsidies",
+            "answerChoiceC": "Lowering taxes",
+            "answerChoiceD": "Introducing new welfare programs",
+            "answerChoiceE": "Expanding public sector employment",
+            "correctAnswer": 0,
+            "pageNumberStart": 85,
+            "pageNumberEnd": 85
+        },
+        {
+            "question": "What does the term 'liquidity' refer to in economics?",
+            "answerChoiceA": "The solvency of a financial institution",
+            "answerChoiceB": "The ease of converting assets into cash",
+            "answerChoiceC": "The amount of liquid assets a company has",
+            "answerChoiceD": "The level of liquidity in the stock market",
+            "answerChoiceE": "The rate of inflation in an economy",
+            "correctAnswer": 1,
+            "pageNumberStart": 92,
+            "pageNumberEnd": 92
+        },
+        {
+            "question": "According to the resource guide, what is 'moral hazard'?",
+            "answerChoiceA": "The ethical implications of economic decisions",
+            "answerChoiceB": "The risk of a party engaging in risky behavior when protected from its consequences",
+            "answerChoiceC": "The hazard of making immoral investment choices",
+            "answerChoiceD": "The risk associated with lending to morally compromised entities",
+            "answerChoiceE": "A term for unethical behavior in financial markets",
+            "correctAnswer": 1,
+            "pageNumberStart": 89,
+            "pageNumberEnd": 89
+        },
+        {
+            "question": "In the context of international trade, what does 'comparative advantage' refer to?",
+            "answerChoiceA": "The advantage that a country has due to its geographic location",
+            "answerChoiceB": "The ability of a country to produce a good at a lower opportunity cost than others",
+            "answerChoiceC": "The overall economic advantage one country has over another",
+            "answerChoiceD": "The advantage gained by a country through currency manipulation",
+            "answerChoiceE": "The advantage one company has over another in the same country",
+            "correctAnswer": 1,
+            "pageNumberStart": 76,
+            "pageNumberEnd": 76
+        },
+        {
+            "question": "What does 'Crowding out' refer to in the context of fiscal policy?",
+            "answerChoiceA": "The process of private investment increasing due to government spending",
+            "answerChoiceB": "The decrease in government spending due to increased private investment",
+            "answerChoiceC": "The decrease in private investment due to increased government spending",
+            "answerChoiceD": "The reduction in consumer spending due to higher taxes",
+            "answerChoiceE": "The increase in foreign investments due to domestic fiscal policies",
+            "correctAnswer": 2,
+            "pageNumberStart": 127,
+            "pageNumberEnd": 127
+        },
+        {
+            "question": "According to the resource guide, what is 'Creative destruction'?",
+            "answerChoiceA": "The process by which new technologies make older ones obsolete",
+            "answerChoiceB": "The destruction of physical capital during economic recessions",
+            "answerChoiceC": "The financial losses incurred by businesses during market downturns",
+            "answerChoiceD": "The economic impact of natural disasters on businesses",
+            "answerChoiceE": "The failure of new businesses in a competitive market",
+            "correctAnswer": 0,
+            "pageNumberStart": 127,
+            "pageNumberEnd": 127
+        },
+        {
+            "question": "What is the primary role of 'Intermediaries' in financial markets?",
+            "answerChoiceA": "To invest in stocks and bonds for long-term profit",
+            "answerChoiceB": "To provide loans and credits to small businesses",
+            "answerChoiceC": "To act as a link between buyers and sellers in transactions",
+            "answerChoiceD": "To regulate the financial markets and enforce laws",
+            "answerChoiceE": "To insure deposits and investments against financial loss",
+            "correctAnswer": 2,
+            "pageNumberStart": 134,
+            "pageNumberEnd": 134
+        },
+        {
+            "question": "What is 'Diminishing returns to scale' in the context of production?",
+            "answerChoiceA": "A situation where increasing production leads to proportionally higher costs",
+            "answerChoiceB": "A condition where more input results in less output",
+            "answerChoiceC": "The decrease in profits as a company grows larger",
+            "answerChoiceD": "A scenario where each additional increase in inputs results in a smaller increase in output",
+            "answerChoiceE": "The reduction in market share as a company expands its operations",
+            "correctAnswer": 3,
+            "pageNumberStart": 135,
+            "pageNumberEnd": 135
+        },
+        {
+            "question": "In economics, what does the term 'Velocity of money' refer to?",
+            "answerChoiceA": "The rate at which money depreciates in value",
+            "answerChoiceB": "The speed at which stock prices fluctuate",
+            "answerChoiceC": "The rate at which money circulates in the economy",
+            "answerChoiceD": "The speed of transactions in electronic trading",
+            "answerChoiceE": "The rate at which banks lend money to businesses",
+            "correctAnswer": 2,
+            "pageNumberStart": 137,
+            "pageNumberEnd": 137
+        },
+        {
+            "question": "What is 'Monopolistic competition'?",
+            "answerChoiceA": "A market with a single seller",
+            "answerChoiceB": "A market with a few sellers that dominate",
+            "answerChoiceC": "A market with many buyers and sellers of identical products",
+            "answerChoiceD": "A market with free entry and exit and differentiated products",
+            "answerChoiceE": "A market where government is the only producer",
+            "correctAnswer": 3,
+            "pageNumberStart": 140,
+            "pageNumberEnd": 140
+        },
+        {
+            "question": "What does 'Velocity of money' measure?",
+            "answerChoiceA": "The rate at which the value of money depreciates",
+            "answerChoiceB": "The speed at which stock prices change",
+            "answerChoiceC": "The rate at which money circulates in the economy",
+            "answerChoiceD": "The speed of electronic financial transactions",
+            "answerChoiceE": "The rate at which central banks print money",
+            "correctAnswer": 2,
+            "pageNumberStart": 140,
+            "pageNumberEnd": 140
+        },
+        {
+            "question": "In economics, what is 'Creative destruction'?",
+            "answerChoiceA": "The process by which new technologies make some older ones obsolete",
+            "answerChoiceB": "Destruction caused by economic recessions",
+            "answerChoiceC": "Losses incurred by businesses during market downturns",
+            "answerChoiceD": "Economic impact of natural disasters",
+            "answerChoiceE": "Failure of new businesses in a competitive market",
+            "correctAnswer": 0,
+            "pageNumberStart": 140,
+            "pageNumberEnd": 140
+        },
+        {
+            "question": "What is the main purpose of the 'Federal funds rate'?",
+            "answerChoiceA": "Interest rate for consumer loans",
+            "answerChoiceB": "Rate for government bonds",
+            "answerChoiceC": "Rate banks charge each other for overnight loans",
+            "answerChoiceD": "Rate at which banks lend to businesses",
+            "answerChoiceE": "Federal Reserve's rate for printing new money",
+            "correctAnswer": 2,
+            "pageNumberStart": 140,
+            "pageNumberEnd": 140
+        },
+        {
+            "question": "What does the 'Law of supply' state?",
+            "answerChoiceA": "Supply decreases as demand increases",
+            "answerChoiceB": "Supply increases as price decreases",
+            "answerChoiceC": "Supply is unrelated to price",
+            "answerChoiceD": "Supply increases as price increases",
+            "answerChoiceE": "Supply is constant regardless of price",
+            "correctAnswer": 3,
+            "pageNumberStart": 140,
+            "pageNumberEnd": 140
+        },
+        {
+            "question": "What role do 'Intermediaries' play in financial markets?",
+            "answerChoiceA": "Regulating financial markets and enforcing laws",
+            "answerChoiceB": "Acting as a link between buyers and sellers in transactions",
+            "answerChoiceC": "Investing in stocks and bonds for long-term profit",
+            "answerChoiceD": "Insuring deposits and investments against financial loss",
+            "answerChoiceE": "Providing loans and credits to small businesses",
+            "correctAnswer": 1,
+            "pageNumberStart": 134,
+            "pageNumberEnd": 134
+        },
+        {
+            "question": "In economics, what does 'Agglomeration benefit' refer to?",
+            "answerChoiceA": "The benefit of diversifying investments",
+            "answerChoiceB": "The increased productivity associated with urbanization",
+            "answerChoiceC": "The advantage of economies of scale in production",
+            "answerChoiceD": "The financial benefit of international trade",
+            "answerChoiceE": "The benefit derived from government subsidies",
+            "correctAnswer": 1,
+            "pageNumberStart": 138,
+            "pageNumberEnd": 138
+        },
+        {
+            "question": "What is the 'Law of demand' in economics?",
+            "answerChoiceA": "The demand increases as the supply increases",
+            "answerChoiceB": "The quantity demanded is unrelated to the price",
+            "answerChoiceC": "The quantity demanded is negatively related to the price",
+            "answerChoiceD": "The demand decreases as income increases",
+            "answerChoiceE": "The demand is determined solely by production costs",
+            "correctAnswer": 2,
+            "pageNumberStart": 138,
+            "pageNumberEnd": 138
+        }
+    ]
+}

@@ -50,8 +50,14 @@ app.use((0, express_session_1.default)({
         mongoUrl: validateEnv_1.default.MONGO_CONNECTION_STRING
     })
 }));
-app.use("/api/users", users_1.default);
-app.use("/api/questions", questions_1.default);
+if (validateEnv_1.default.DEV) {
+    app.use("/api/users", users_1.default); //! for build change to /users
+    app.use("/api/questions", questions_1.default); //! for build change to /questions
+}
+else {
+    app.use("/users", users_1.default); //! for build change to /users
+    app.use("/questions", questions_1.default); //! for build change to /questions
+}
 app.use((req, res, next) => {
     console.log(req.url);
     next((0, http_errors_1.default)(404, "Endpoint not found"));
